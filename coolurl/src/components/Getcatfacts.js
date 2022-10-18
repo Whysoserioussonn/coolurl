@@ -11,7 +11,8 @@ export default function Getcatfacts() {
                 'https://api.thecatapi.com/v1/images/search'
             );
             const data = await response.json()
-            console.log(data)
+            console.log(data[0].url)
+            
             setFact(data)
         }
         catch (err){
@@ -27,14 +28,13 @@ export default function Getcatfacts() {
     return(
         <div>
             <h1> Kitties! Kitties! Kitties!</h1>
+            <button onClick={handleClick}>Get New Cat</button>
                   
             <br/>
-            <img src={fact.image_link} height='500' width='500' alt='no picture available'></img>
+            <img src={fact[0].url} height='500' width='500' alt='no picture available'></img>
             <br/>
-            <p>id: {fact.id}</p>
-            <p>url: {fact.url}</p>
-            <p>width: {fact.width}</p>
-            <p>height: {fact.height}</p>
+            
+            
         </div>
     )
 }
