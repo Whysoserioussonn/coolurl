@@ -26,7 +26,7 @@ export default function Getcatfacts() {
     },[])
     return(
         <div>
-            <h1> Kitties!</h1>
+            <h1> Kitties! Kitties! Kitties!</h1>
                   
             <br/>
             <img src={fact.image_link} height='500' width='500' alt='no picture available'></img>
