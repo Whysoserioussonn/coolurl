@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Zooanimals from './pages/Zooanimals';
 import Homepage from './pages/Homepage';
+import Catfacts from './pages/Catfacts';
 
 function App() {
   return (

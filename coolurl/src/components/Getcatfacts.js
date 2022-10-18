@@ -1,4 +1,4 @@
-export default function Getcatfact() {
+export default function Getcatfacts() {
   return(
       <div>
       <h1>cat fact</h1>
