@@ -9,6 +9,7 @@ import Dogfacts from './pages/Dogfacts';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/cats' element={<Catfacts/>}/>
